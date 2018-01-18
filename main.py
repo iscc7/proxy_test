@@ -4,7 +4,7 @@ from new_tex import get_ip, get_text
 test_URL = 'http://www.baidu.com'
 
 with open('./ip.txt', 'w') as ip_file:
-    for i in range(2):
+    for i in range(1000):
         URL = 'http://www.kuaidaili.com/free/inha/'+str(i)
         html = get_text(url=URL)
         ip_list = get_ip(html)
